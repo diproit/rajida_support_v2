@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:tso_app_v2/core/keys/app_navigator_keys.dart';
 import 'package:tso_app_v2/core/presentation/screen/home_screen.dart';
+import 'package:tso_app_v2/features/dashbord/presentation/screens/dashboard_screen.dart';
 import '../../features/auth/presentation/screens/login_screen.dart';
 import '../../features/auth/presentation/screens/otp_screen.dart';
 import '../../features/auth/presentation/screens/welcome_screen.dart';
@@ -41,7 +42,7 @@ final appRouter = GoRouter(
             GoRoute(
               path: '/dashboard',
               name: 'dashboard',
-              builder: (context, state) => const Center(child: Text('Dashboard')),
+              builder: (context, state) => DashboardScreen(),
             ),
           ],
         ),
@@ -77,7 +78,8 @@ final appRouter = GoRouter(
             GoRoute(
               path: '/attendance',
               name: 'attendance',
-              builder: (context, state) => const Center(child: Text('Attendance')),
+              builder: (context, state) =>
+                  const Center(child: Text('Attendance')),
             ),
           ],
         ),
