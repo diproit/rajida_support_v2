@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tso_app_v2/core/theme/app_colores.dart';
 
 class CustomBottomNavbar extends StatelessWidget {
   final Function(int) onTabTapped;
@@ -36,7 +36,7 @@ class CustomBottomNavbar extends StatelessWidget {
             onTabTapped,
             'assets/icons/home_icon.png',
             currentIndex == 0,
-            Colors.black,
+            kPrimaryColor,
             'Home',
           ),
 
@@ -45,7 +45,7 @@ class CustomBottomNavbar extends StatelessWidget {
             onTabTapped,
             'assets/icons/task_icon.png',
             currentIndex == 1,
-            Colors.black,
+            kPrimaryColor,
             'Tasks',
           ),
 
@@ -54,7 +54,7 @@ class CustomBottomNavbar extends StatelessWidget {
             onTabTapped,
             'assets/icons/due_icon.png',
             currentIndex == 2,
-            Colors.black,
+            kPrimaryColor,
             'Dues',
           ),
           navBarIcon(
@@ -62,7 +62,7 @@ class CustomBottomNavbar extends StatelessWidget {
             onTabTapped,
             'assets/icons/clients_icon.png',
             currentIndex == 3,
-            Colors.black,
+            kPrimaryColor,
             'Clients',
           ),
           navBarIcon(
@@ -70,7 +70,7 @@ class CustomBottomNavbar extends StatelessWidget {
             onTabTapped,
             'assets/icons/attendance_icon.png',
             currentIndex == 4,
-            Colors.black,
+            kPrimaryColor,
             'Attendance',
           ),
         ],
